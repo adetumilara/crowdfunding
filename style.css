@@ -448,8 +448,8 @@ sup {
   font-size: 1.5rem;
 }
 
-.menua div h5 {
-  font-size: 1.2rem;
+.menua h4 {
+  color: hsl(176, 50%, 47%);
 }
 
 .menua div {
@@ -458,12 +458,16 @@ sup {
   justify-content: space-between;
   color: hsl(176, 72%, 28%);
 }
-.menua div h3 {
+.menua h3 {
   color: black;
 }
-.menua div h3:hover {
+.menua h3:hover {
   color: hsl(176, 72%, 28%);
   cursor: pointer;
+}
+
+.mobileView {
+  display: none;
 }
 
 .menuContent p {
@@ -492,7 +496,9 @@ sup {
   width: 100%;
   border-top: 1px #ccc solid;
 }
-
+.number {
+  display: none;
+}
 .form {
   display: flex;
   justify-content: space-between;
@@ -535,6 +541,15 @@ sup {
   padding-left: 2rem;
   cursor: pointer;
   color: white;
+}
+.menua h4 {
+  font-size: 1rem;
+  /* color: #ccc; */
+  font-weight: lighter;
+}
+
+.menua h4:hover {
+  color: black;
 }
 
 .container6 {
@@ -704,5 +719,78 @@ sup {
 
   .overlay {
     height: 600vh;
+  }
+
+  .mobileView {
+    display: block;
+  }
+
+  .container2 h2,
+  .container2 p {
+    text-align: center;
+  }
+  .container2,
+  .container3,
+  .container4 {
+    width: 90%;
+  }
+
+  .container5 {
+    width: 85%;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container6 {
+    width: 90%;
+    left: 5%;
+  }
+
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .circlediv {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .menua {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+
+  .menuContent h5 {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  .menuContent span {
+    font-weight: lighter;
+    color: #ccc;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .number {
+    display: block;
+  }
+  .hidden {
+    display: none;
   }
 }
